@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="../img/retrobit_icon_pack.svg">
+  <title>Privacy Policy — RetroBit Icon Pack</title>
+  <link rel="preload" href="../font/pixelify-sans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../font/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      max-width: 100%;
+    }
+    html, body {
+      overflow-x: hidden;
+      max-width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --black: #000000;
+      --white: #ffffff;
+      --gray-50: #f9f9f9;
+      --gray-100: #f3f3f3;
+      --gray-200: #e5e5e5;
+      --gray-500: #737373;
+      --gray-700: #404040;
+      --accent: #e63946;
+      --font-pixel: 'Pixelify Sans', monospace;
+      --font-body: 'Inter', sans-serif;
+    }
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: var(--black);
+      padding-top: 4rem;
+    }
+
+    /* ── Nav ── */
+    nav {
+      background: var(--black);
+      position: fixed;
+      width: 100%;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      border-bottom: 1px solid #222;
+    }
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+    .nav-logo {
+      width: 28px;
+      height: 28px;
+      background: var(--white);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-pixel);
+      font-size: 12px;
+      color: var(--black);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .nav-title {
+      font-family: var(--font-pixel);
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links li {
+      display: flex;
+      align-items: center;
+    }
+    .nav-links a {
+      font-family: var(--font-pixel);
+      color: #a3a3a3;
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 0.25rem 1rem;
+      transition: color 0.15s;
+      white-space: nowrap;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-links li.active a {
+      color: var(--white);
+    }
+    .nav-links li.active::before {
+      content: '▶';
+      color: var(--white);
+      font-size: 0.7rem;
+      margin-left: 0.5rem;
+    }
+    .nav-divider {
+      color: #444;
+      font-size: 0.8rem;
+      user-select: none;
+    }
+    .nav-download a {
+      font-family: var(--font-pixel);
+      color: #a3a3a3;
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 0.25rem 1rem;
+      transition: color 0.15s;
+    }
+    .nav-download a:hover { color: var(--white); }
+
+    /* ── Main ── */
+    .main-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    /* ── Page header ── */
+    .page-header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--black);
+    }
+    .page-header h1 {
+      font-family: var(--font-pixel);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      line-height: 1.1;
+    }
+    .page-header .meta {
+      font-size: 0.85rem;
+      color: var(--gray-500);
+      margin: 0;
+    }
+    .page-header .meta span {
+      display: inline-block;
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-pixel);
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 2px;
+      margin-right: 6px;
+    }
+
+    /* ── Sections ── */
+    .legal-section { margin-bottom: 2.5rem; }
+    .legal-section h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .legal-section h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--black);
+      margin: 1.1rem 0 0.5rem;
+    }
+    .legal-section p {
+      font-size: 0.9375rem;
+      line-height: 1.7;
+      color: #1a1a1a;
+      margin: 0 0 0.75rem;
+    }
+    .legal-section ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin: 0.5rem 0 0.75rem;
+    }
+    .legal-section ul ul {
+      list-style: circle;
+      margin-top: 0.4rem;
+    }
+    .legal-section li {
+      font-size: 0.9375rem;
+      line-height: 1.7;
+      color: #1a1a1a;
+      margin-bottom: 0.35rem;
+    }
+    .legal-section strong { font-weight: 600; }
+
+    /* service card */
+    .service-card {
+      border: 1px solid var(--gray-200);
+      border-left: 3px solid var(--black);
+      border-radius: 4px;
+      padding: 0.85rem 1rem;
+      margin-bottom: 0.75rem;
+      background: var(--gray-50);
+    }
+    .service-card h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+    }
+    .service-card p {
+      font-size: 0.875rem;
+      margin: 0.2rem 0;
+      color: var(--gray-700);
+    }
+    .service-card a {
+      color: var(--black);
+      font-size: 0.8rem;
+      word-break: break-all;
+    }
+
+    /* contact email */
+    .contact-email {
+      display: inline-block;
+      font-family: var(--font-pixel);
+      font-size: 0.9rem;
+      background: var(--black);
+      color: var(--white);
+      padding: 6px 14px;
+      border-radius: 3px;
+      text-decoration: none;
+      margin-top: 4px;
+    }
+    .contact-email:hover { opacity: 0.85; }
+
+    /* ── Footer ── */
+    footer { background: var(--black); }
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    footer span, footer a {
+      font-size: 0.875rem;
+      color: var(--white);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 640px) {
+      body { padding-top: 3.5rem; }
+      .nav-links a { padding: 0.25rem 0.6rem; font-size: 0.82rem; }
+      .main-wrap { padding: 1.5rem 1rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <div class="nav-logo"><img src="../img/retrobit.png" class="h-7"/></div>
+      <span class="nav-title">RetroBit Icon Pack</span>
+    </a>
+    <ul class="nav-links">
+      <li class="active"><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><span class="nav-divider">/</span></li>
+      <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+      <li><span class="nav-divider">|</span></li>
+      <li class="nav-download"><a href="https://play.google.com/store" target="_blank" rel="noopener">Download</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="main-wrap">
+  <header class="page-header">
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      <span>Effective 2026-03-15</span>
+      Last updated: March 15, 2026
+    </p>
+    <p style="margin-top:0.75rem;font-size:0.9375rem;line-height:1.7;">
+      This privacy policy explains how RetroBit Icon Pack ("we", "our", or "the Application") handles your information when you use our icon pack application for mobile devices, developed by berlain.ui.
+    </p>
+  </header>
+
+  <!-- Information We Collect -->
+  <div class="legal-section">
+    <h2>Information We Collect</h2>
+
+    <h3>A. Information You Provide (Optional)</h3>
+    <ul>
+      <li>By default, RetroBit Icon Pack does <strong>not</strong> collect any personal information. The core functionality of browsing and applying icons works entirely offline without an internet connection.</li>
+      <li>
+        <strong>Icon Requests:</strong> When you use the in-app icon request feature (powered by CandyBar dashboard), some data is gathered when you send the request. You have full control to review and modify what you send before submitting. Information collected includes:
+        <ul>
+          <li>Your email address (used to contact you about your request or notify you when requested icons are added)</li>
+          <li>Device information: manufacturer, model, product name, screen resolution, and Android version</li>
+          <li>App information: app version and dashboard version</li>
+          <li>Selected apps: the list of apps you choose to request icons for, including package names and component information</li>
+        </ul>
+      </li>
+      <li><strong>Contact:</strong> If you contact us via email, we collect your email address and message content to provide support.</li>
+    </ul>
+
+    <h3>B. Information Collected Automatically</h3>
+    <ul>
+      <li><strong>Log Data:</strong> In case of an error in the app, we may collect data and information (through third-party products) called Log Data. This may include your device IP address, device name, operating system version, app configuration, time and date of use, and other statistics.</li>
+      <li><strong>Purchase Verification:</strong> To verify paid status, we check with Google Play Services if a valid purchase exists.</li>
+    </ul>
+
+    <h3>C. Information We Do NOT Collect</h3>
+    <ul>
+      <li>We do not collect analytics or usage statistics by default.</li>
+      <li>We do not collect payment information — all transactions are handled by Google Play Billing.</li>
+      <li>Wallpapers: we do not collect any information when you browse, preview, or apply wallpapers.</li>
+    </ul>
+  </div>
+
+  <!-- How We Use -->
+  <div class="legal-section">
+    <h2>How We Use Your Information</h2>
+    <ul>
+      <li><strong>Icon Requests:</strong> Information collected through icon requests is used solely to create new icons for future updates. All identifiable information is stripped when requests are processed, leaving only app names, request date, and version information. We may contact you via email if we need clarification or to notify you when your requested icons are added.</li>
+      <li><strong>Purchase Verification:</strong> Purchase status data is used to confirm your license when using the Application.</li>
+      <li><strong>Support:</strong> Email contact information is used only to respond to your inquiry.</li>
+    </ul>
+  </div>
+
+  <!-- AI -->
+  <div class="legal-section">
+    <h2>Artificial Intelligence (AI)</h2>
+    <p>The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.</p>
+  </div>
+
+  <!-- Third-Party -->
+  <div class="legal-section">
+    <h2>Third-Party Services</h2>
+    <p>The Application uses the following third-party services that may collect information used to identify you:</p>
+    <div class="service-card">
+      <h4>1. Google Play Services</h4>
+      <p><strong>Purpose:</strong> Purchase verification and license checking</p>
+      <p><strong>Data Collected:</strong> Purchase status, device information for license verification</p>
+      <p><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+    </div>
+    <div class="service-card">
+      <h4>2. Google Play Billing</h4>
+      <p><strong>Purpose:</strong> Processing payments (handled entirely by Google)</p>
+      <p><strong>Data Collected:</strong> Transaction information (Google handles all payment data)</p>
+      <p><strong>Privacy Policy:</strong> <a href="https://payments.google.com/termsOfService" target="_blank" rel="noopener">https://payments.google.com/termsOfService</a></p>
+    </div>
+  </div>
+
+  <!-- Your Control -->
+  <div class="legal-section">
+    <h2>Your Control Over Information</h2>
+    <ul>
+      <li><strong>Icon Requests:</strong> You can review and modify all information before sending an icon request email. You choose what apps to request and what device information to include.</li>
+      <li><strong>Uninstall:</strong> You can stop all data collection by uninstalling the Application using your device's standard uninstall process.</li>
+      <li><strong>Email Opt-Out:</strong> If you no longer wish to be contacted about your icon requests, you can reply to any email requesting removal.</li>
+      <li><strong>Purchase Data:</strong> Purchase history is managed by Google. Contact Google Play support for purchase data requests.</li>
+    </ul>
+  </div>
+
+  <!-- Data Retention -->
+  <div class="legal-section">
+    <h2>Data Retention</h2>
+    <ul>
+      <li><strong>Icon Request Emails:</strong> Retained for up to three months, then securely deleted once icons have been processed.</li>
+      <li><strong>Request Dashboard:</strong> Non-identifiable request information (app names, dates) may be kept for development tracking.</li>
+      <li><strong>Log Data:</strong> Retained as needed for debugging purposes.</li>
+      <li><strong>Purchase Verification Data:</strong> Retained as long as needed to verify your license status.</li>
+    </ul>
+    <p>If you'd like us to delete your data, please contact us at:</p>
+    <a class="contact-email" href="mailto:berlain.studios@gmail.com">berlain.studios@gmail.com</a>
+  </div>
+
+  <!-- Security -->
+  <div class="legal-section">
+    <h2>Security</h2>
+    <p>We value your trust and strive to use commercially acceptable means of protecting your information. All request emails are securely stored with encryption. Please be aware that no method of transmission over the internet or electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+  </div>
+
+  <!-- Children -->
+  <div class="legal-section">
+    <h2>Children's Privacy</h2>
+    <p>The Application does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided personal information, we will immediately delete this from our records. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us at <a href="mailto:berlain.studios@gmail.com">berlain.studios@gmail.com</a>.</p>
+  </div>
+
+  <!-- Changes -->
+  <div class="legal-section">
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted. Continued use of the Application is deemed approval of all changes.</p>
+  </div>
+
+  <!-- Consent -->
+  <div class="legal-section">
+    <h2>Your Consent</h2>
+    <p>By using the Application, you consent to the collection and use of information as described in this policy. When you submit an icon request, you are giving explicit consent for the information you provide to be used for processing that request.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="legal-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, contact us at:</p>
+    <a class="contact-email" href="mailto:berlain.studios@gmail.com">berlain.studios@gmail.com</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2025 <a href="#">berlain.ui</a>. All Rights Reserved.</span>
+  </div>
+</footer>
+</body>
+</html>
