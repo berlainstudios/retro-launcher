@@ -64,6 +64,13 @@
       <ul class="ps-5 mt-2 space-y-1 list-disc break-words">
          <li><strong>Premium Purchase: </strong>If you choose to purchase the premium version, we process the transaction through Google Play Billing. We do not receive or store your payment information (credit card, etc.) - this is handled by Google.</li>
          <li><strong>Contact Information: </strong>If you contact us via email, we collect your email address and message content to provide support.</li>
+         <li><strong>Icon Requests: </strong>When you use the in-app icon request feature, we collect:</li>
+            <ul class="ps-5 mt-2 space-y-1 list-disc break-words">
+                <li>Your email address</li>
+                <li>The package names and component information of apps you request</li>
+                <li>App icons (for reference when creating new icons)</li>
+                <li>Your premium status (to prioritize requests)</li>
+            </ul>
       </ul>
     </ul>
 
@@ -79,6 +86,12 @@
                 <li>IP address (anonymized by Firebase for geographic approximation)</li>
             </ul>
         <li><strong>Purchase Verification: </strong>To verify premium status, we check with Google Play Services if a valid purchase exists.</li>
+        <li><strong>Google Sign-In Data: </strong>When you sign in with your Google account:</li>
+            <ul class="ps-5 mt-2 space-y-1 list-disc break-words">
+                <li>We collect your Google User ID (for syncing premium status across devices)</li>
+                <li>We do not collect your email address, name, or profile information unless you explicitly provide them</li>
+                <li>This User ID is used solely to verify your premium purchase across multiple devices</li>
+            </ul>
       </ul>
     </ul>
 
@@ -86,8 +99,18 @@
     <!-- Unordered List (Bullets) -->
     <ul class="font-inter text-black space-y-3 pl-6 break-words">
       <ul class="ps-5 mt-2 space-y-1 list-disc break-words">
-         <li><strong>App Detection: </strong>Retro Launcher detects your installed applications to display them on the home screen. We do not transmit, store, or analyze your installed apps list. This data remains entirely on your device.</li>
-         <li><strong>Internet Permission: </strong>Required for analytics and purchase verification.</li>
+         <li><strong>App Detection: </strong>Retro Launcher detects your installed applications to display them on the home screen and for the icon request feature. We do not transmit, store, or analyze your installed apps list except when you explicitly send an icon request. This data remains entirely on your device until you choose to submit a request.</li>
+         <li><strong>Internet Permission: </strong>Required for analytics, purchase verification, Google Sign-In, and icon requests.</li>
+      </ul>
+    </ul>
+
+    <h3 class="text-2xl font-semibold">How We Use Your Information</h2>
+    <!-- Unordered List (Bullets) -->
+    <ul class="font-inter text-black space-y-3 pl-6 break-words">
+      <ul class="ps-5 mt-2 space-y-1 list-disc break-words">
+         <li><strong>Premium Syncing: </strong>Your Google User ID allows us to verify your premium purchase across all your devices, ensuring you have access to premium features wherever you use Retro Launcher.</li>
+         <li><strong>Icon Requests: </strong>The information collected through icon requests (package names, component info, app icons) is used solely to create new icons for future updates. We may contact you via email if we need clarification about your request or to notify you when your requested icons are added.</li>
+         <li><strong>Analytics: </strong>Usage data helps us understand how people use Retro Launcher and prioritize improvements.</li>
       </ul>
     </ul>
 
@@ -123,6 +146,15 @@
         <li><strong>Privacy Policy: </strong>https://payments.google.com/termsOfService</li>
       </ul>
     </ul>
+    <h3 class="text-2xl font-semibold">4. Google Sign-In</h2>
+    <!-- Unordered List (Bullets) -->
+    <ul class="font-inter text-black space-y-3 pl-6">
+      <ul class="ps-5 mt-2 space-y-1 list-disc">
+         <li><strong>Purpose: </strong>Authenticating users for cross-device premium syncing</li>
+        <li><strong>Data Shared: </strong>Google User ID (for verification)</li>
+        <li><strong>Privacy Policy: </strong>https://policies.google.com/privacy</li>
+      </ul>
+    </ul>
     <p class="text-black">We only share data necessary for these services to function. Firebase may collect IP addresses temporarily for geographic approximation, but these are anonymized and not accessible to us in identifiable form.</p>
 
     <h2 class="text-2xl font-bold">What are my opt-out rights?</h2>
@@ -133,13 +165,24 @@
     <ul class="font-inter text-black space-y-3 pl-6 break-words">
       <ul class="ps-5 mt-2 space-y-1 list-disc break-words">
          <li><strong>Analytics Opt-Out: </strong>You can disable anonymous analytics collection at any time in the app's Settings → Privacy section. When disabled, no usage data will be sent to Firebase Analytics.</li>
+         <li><strong>Google Sign-In: </strong>You can choose not to sign in with Google and use the free version without an account. To purchase or activate premium features, you must sign in with Google to enable cross-device syncing and purchase verification.</li>
+         <li><strong>Icon Requests: </strong>You can use the icon request feature without signing in, but we will not be able to associate your requests with your premium status.</li>
          <li><strong>Uninstall: </strong>Uninstalling the app removes all locally stored data.</li>
          <li><strong>Purchase Data: </strong>Purchase history is managed by Google. Contact Google Play support for purchase data requests.</li>
       </ul>
     </ul>
 
     <h2 class="text-2xl font-bold">What is the data retention policy and how can you manage your information?</h2>
-    <p class="text-black">We retain analytics data for up to 24 months. Purchase verification data is retained as long as needed to verify your premium status. If you'd like us to delete your data, please contact us at berlain.studios@gmail.com</p>
+    <!-- Unordered List (Bullets) -->
+    <ul class="font-inter text-black space-y-3 pl-6 break-words">
+        <ul class="ps-5 mt-2 space-y-1 list-disc break-words">
+        <li><strong>Analytics Data: </strong>Retained for up to 24 months.</li>
+        <li><strong>Purchase Verification Data: </strong>Retained as long as needed to verify your premium status.</li>
+        <li><strong>Google User ID: </strong>Stored only to maintain your premium access across devices. You can request deletion by contacting us.</li>
+        <li><strong>Icon Request Data: </strong>Retained until the requested icons are created and added to the app, after which we may delete the request data unless you've opted into future communications.</li>
+      </ul>
+      <p class="text-black">If you'd like us to delete your data, please contact us at berlain.studios@gmail.com</p>
+    </ul>
     
     <h2 class="text-2xl font-bold">How does the Application address children's privacy?</h2>
     <p class="text-black">The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us at berlain.studios@gmail.com</p>
@@ -157,7 +200,7 @@
     <p class="text-black">If you have questions about privacy, contact us at berlain.studios@gmail.com</p>
     
     <p class="text-black">This privacy policy is effective as of 2026-01-01</p>
-    <p class="text-black">Last updated: 2026-01-01</p>
+    <p class="text-black">Last updated: 2026-03-15</p>
     
   </section>
 </div>
