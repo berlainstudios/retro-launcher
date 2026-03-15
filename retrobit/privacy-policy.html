@@ -44,6 +44,7 @@
 
     /* ── Nav ── */
     nav {
+      overflow-x: hidden;
       background: var(--black);
       position: fixed;
       width: 100%;
@@ -55,18 +56,20 @@
     .nav-inner {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 1rem 1.5rem;
+      padding: 0.75rem 1.25rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 0.5rem;
+      overflow: hidden;
     }
     .nav-brand {
       display: flex;
       align-items: center;
       gap: 0.75rem;
       text-decoration: none;
+      flex-shrink: 0;
     }
     .nav-logo {
       width: 28px;
@@ -96,42 +99,45 @@
       list-style: none;
       margin: 0;
       padding: 0;
+      flex-shrink: 1;
+      min-width: 0;
     }
     .nav-links li {
       display: flex;
       align-items: center;
+      flex-shrink: 0;
     }
     .nav-links a {
       font-family: var(--font-pixel);
       color: #a3a3a3;
       text-decoration: none;
-      font-size: 0.95rem;
-      padding: 0.25rem 1rem;
+      font-size: 0.9rem;
+      padding: 0.25rem 0.6rem;
       transition: color 0.15s;
       white-space: nowrap;
     }
     .nav-links a:hover { color: var(--white); }
-    .nav-links li.active a {
-      color: var(--white);
-    }
+    .nav-links li.active a { color: var(--white); }
     .nav-links li.active::before {
       content: '▶';
       color: var(--white);
-      font-size: 0.7rem;
-      margin-left: 0.5rem;
+      font-size: 0.65rem;
+      margin-left: 0.4rem;
     }
     .nav-divider {
       color: #444;
       font-size: 0.8rem;
       user-select: none;
+      padding: 0 0.1rem;
     }
     .nav-download a {
       font-family: var(--font-pixel);
       color: #a3a3a3;
       text-decoration: none;
-      font-size: 0.95rem;
-      padding: 0.25rem 1rem;
+      font-size: 0.9rem;
+      padding: 0.25rem 0.6rem;
       transition: color 0.15s;
+      white-space: nowrap;
     }
     .nav-download a:hover { color: var(--white); }
 
@@ -268,9 +274,12 @@
     footer a:hover { text-decoration: underline; }
 
     @media (max-width: 640px) {
-      body { padding-top: 3.5rem; }
-      .nav-links a { padding: 0.25rem 0.6rem; font-size: 0.82rem; }
+      body { padding-top: 3.25rem; }
+      .nav-title { font-size: 1rem; }
       .main-wrap { padding: 1.5rem 1rem 3rem; }
+      .nav-download { display: none; }
+      /* hide the | divider before download too */
+      .nav-links li:nth-last-child(2) { display: none; }
     }
   </style>
 </head>
@@ -392,7 +401,7 @@
       <li><strong>Purchase Verification Data:</strong> Retained as long as needed to verify your license status.</li>
     </ul>
     <p>If you'd like us to delete your data, please contact us at:</p>
-    <a class="contact-email" href="mailto:berlain.studios@gmail.com">berlain.studios@gmail.com</a>
+    <a class="contact-email" href="/cdn-cgi/l/email-protection#b6d4d3c4dad7dfd898c5c2c3d2dfd9c5f6d1dbd7dfda98d5d9db"><span class="__cf_email__" data-cfemail="3e5c5b4c525f5750104d4a4b5a57514d7e59535f5752105d5153">[email&#160;protected]</span></a>
   </div>
 
   <!-- Security -->
@@ -404,7 +413,7 @@
   <!-- Children -->
   <div class="legal-section">
     <h2>Children's Privacy</h2>
-    <p>The Application does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided personal information, we will immediately delete this from our records. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us at <a href="mailto:berlain.studios@gmail.com">berlain.studios@gmail.com</a>.</p>
+    <p>The Application does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided personal information, we will immediately delete this from our records. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us at <a href="/cdn-cgi/l/email-protection#9efcfbecf2fff7f0b0edeaebfaf7f1eddef9f3fff7f2b0fdf1f3"><span class="__cf_email__" data-cfemail="6d0f081f010c0403431e19180904021e2d0a000c0401430e0200">[email&#160;protected]</span></a>.</p>
   </div>
 
   <!-- Changes -->
@@ -422,15 +431,4 @@
   <!-- Contact -->
   <div class="legal-section">
     <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, contact us at:</p>
-    <a class="contact-email" href="mailto:berlain.studios@gmail.com">berlain.studios@gmail.com</a>
-  </div>
-</div>
-
-<footer>
-  <div class="footer-inner">
-    <span>© 2025 <a href="#">berlain.ui</a>. All Rights Reserved.</span>
-  </div>
-</footer>
-</body>
-</html>
+    <p>If you have any questions about this Priv
