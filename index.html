@@ -102,7 +102,7 @@
         <li><strong>Accessibility Service (Optional): </strong>If you enable the double-tap-to-lock feature, Retro Launcher uses Android's Accessibility API solely to detect the gesture and lock your screen. This service does not read, record, collect, or transmit any screen content or personal data. This feature is disabled by default and only activates if you explicitly enable it in the app's settings and grant the permission.</li>
          <li><strong>App Detection: </strong>Retro Launcher detects your installed applications to display them on the home screen and for the icon request feature. We do not transmit, store, or analyze your installed apps list except when you explicitly send an icon request. This data remains entirely on your device until you choose to submit a request.</li>
          <li><strong>Internet Permission: </strong>Required for analytics, purchase verification, Google Sign-In, and icon requests.</li>
-         <li><strong>Notification Access (Optional): </strong>If you grant this permission, we can display music information (song title, artist, album art) in the music widget. This data is processed locally and never leaves your device.</li>
+         <li><strong>Notification Access (Optional): </strong>If you grant this permission, we can display music information (song title, artist, album art) in the music widget, and show a notification dot on home screen app icons that currently have active notifications. This data is processed locally and never leaves your device.</li>
       </ul>
     </ul>
 
@@ -124,6 +124,17 @@
          <li>This data is <strong>never sent to our servers or any third party</strong></li>
          <li>The widget only works for music apps that show media notifications</li>
          <li>You can disable this feature at any time by revoking notification access in your device settings</li>
+      </ul>
+    </ul>
+
+    <h3 class="text-2xl font-semibold">E. Notification Badges</h2>
+    <p class="text-black">If you grant notification access permission, Retro Launcher can also detect which apps currently have active notifications, in order to display a small dot on that app's home screen icon.</p>
+    <!-- Unordered List (Bullets) -->
+    <ul class="font-inter text-black space-y-3 pl-6 break-words">
+      <ul class="ps-5 mt-2 space-y-1 list-disc break-words">
+         <li>Only the package name of the notifying app is read — notification title, text, and content are never read or stored</li>
+         <li>This feature is optional and disabled by default</li>
+         <li>You can disable it in the app's settings, or revoke notification access entirely in your device's Settings → Apps → Retro Launcher → Permissions</li>
       </ul>
     </ul>
 
@@ -243,7 +254,7 @@
     <p class="text-black">If you have questions about privacy, contact us at berlain.studios@gmail.com</p>
     
     <p class="text-black">This privacy policy is effective as of 2026-01-01</p>
-    <p class="text-black">Last updated: 2026-08-18</p>
+    <p class="text-black">Last updated: 2026-09-02</p>
     
   </section>
 </div>
